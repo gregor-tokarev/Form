@@ -1,0 +1,1361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./create_announcement/style.css">
+  <link rel="preload" href="./openSans/OpenSans-Regular.ttf" as="font">
+  <title>Новое объявление</title>
+</head>
+<body>
+<div class="announcement">
+  <div class="announcement__wrapper">
+    <h2 class="announcement__title">Новое объявление</h2>
+    <div class="announcement__content">
+      <form name="announcement" class="announcement__form form">
+        <div class="form__section form__section--large-mr">
+          <h3 class="form__section-title">Тип объявления</h3>
+          <div class="form__section-content">
+            <ul class="form__input-list">
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Тип недвижимости</div>
+                <div class="from__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Жилая"
+                              name="building-type"
+                              id="section-1_radio-1"
+                              class="radio-button-group__input">
+                        <label for="section-1_radio-1" class="radio-button-group__label">
+                          <a href="create_announcement.html">Жилая</a>
+                        </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Коммерческая"
+                              name="building-type"
+                              checked
+                              id="section-1_radio-453"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-453" class="radio-button-group__label">
+                        Коммерческая
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--large form__input-item--radio-grid">
+                <div class="form__name">Объект</div>
+                <div class="form__disc">
+                  <div class="radio-button-group radio-button-group--no-tab">
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Офис"
+                              name="object-type"
+                              id="section-1_radio-3"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-3" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Офис
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Здание"
+                              name="object-type"
+                              id="section-1_radio-5"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-5" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Здание
+                      </label>
+                    </div>
+
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Гараж"
+                              name="object-type"
+                              id="section-1_radio-6"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-6" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Гараж
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Готовый бизнес"
+                              name="object-type"
+                              id="section-1_radio-9"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-9" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Готовый бизнес
+                      </label>
+                    </div>
+
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Производство"
+                              name="object-type"
+                              id="section-1_radio-7"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-7" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Производство
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Помещения"
+                              name="object-type"
+                              id="section-1_radio-54"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-54" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Помещения
+                      </label>
+                    </div>
+                    <span class="form__spacer"></span>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Торговая площадь"
+                              name="object-type"
+                              id="section-1_radio-834"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-834" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Торговая площадь
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Склда"
+                              name="object-type"
+                              id="section-1_radio-812"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-812" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Склда
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Земля"
+                              name="object-type"
+                              id="section-1_radio-348"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-348" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Земля
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Общепит"
+                              name="object-type"
+                              id="section-1_radio-81232"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-81232" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Общепит
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Автосервис"
+                              name="object-type"
+                              id="section-1_radio-83423"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-83423" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Автосервис
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">Адрес или название бизнес-центра</h3>
+          <div class="form__section-content">
+            <ul class="form__input-list">
+              <li class="form__input-item">
+                <input type="text" name="address" class="input input--fluid">
+              </li>
+              <li class="form__input-item">
+                <div class="row row--no-wrap">
+                  <div class="row__wrapper row__wrapper--2">
+                    <label for="section-2_input-2" class="input__label">или название жилого
+                      комплекса</label>
+                    <input type="text" id="section-2_input-2" name="housing-name" class="input input--fluid">
+                  </div>
+                  <div class="row__wrapper">
+                    <label for="section-2_input-3" class="input__label">Корпус</label>
+                    <input type="text" id="section-2_input-3" name="body" class="input input--fluid">
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item">
+                <div
+                        id="map"
+                        style="
+                                                       width: 100%;
+                                                       height: 500px;
+                                                     "
+                ></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">Об объекте</h3>
+          <div class="form__section-content">
+            <ul class="form__input-list">
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Номер налоговой</div>
+                <div class="form__disc">
+                  <input type="text" name="tax-number" class="input">
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Площадь</div>
+                <div class="form__disc">
+                  <input type="text" name="square" class="input">
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Можно частями</div>
+                <div class="form__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="is-part" value="yes" id="section-3_radio-23413"
+                             class="radio-button-group__input">
+                      <label for="section-3_radio-23413" class="radio-button-group__label">
+                        Да
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="is-part" value="no" id="section-3_radio-12342"
+                             class="radio-button-group__input">
+                      <label for="section-3_radio-12342" class="radio-button-group__label">
+                        Нет
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Этаж</div>
+                <div class="form__disc">
+                  <input type="text" name="floor" class="input">
+                  <span style="margin-right: 1rem; display: block">из</span>
+                  <input type="text" name="max-floor" class="input">
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Юридический адрес</div>
+                <div class="form__disc">
+                  <div class="select">
+                    <input type="hidden" name="" class="select__input">
+                    <div class="select__header">
+                      <div data-value="Не выбранно" id="is-legal-address" class="select__current">Не выбранно</div>
+                    </div>
+                    <div class="select__body">
+                      <div class="select__item" data-value="Предоставляется">Предоставляется</div>
+                      <div class="select__item" data-value="Не предоставляется">Не предоставляется</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Высота потолков</div>
+                <div class="form__disc">
+                  <input type="text" name="сeiling-height" class="input"><span>м</span>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Помещение занято</div>
+                <div class="form__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="is-not-empty" value="yes" id="section-3_radio-233"
+                             class="radio-button-group__input">
+                      <label for="section-3_radio-233" class="radio-button-group__label">
+                        Да
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="is-not-empty" value="no" id="section-3_radio-1232"
+                             class="radio-button-group__input">
+                      <label for="section-3_radio-1232" class="radio-button-group__label">
+                        Нет
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Планировка</div>
+                <div class="form__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input type="radio" value="кабинетная" name="layout" id="section-3_radio-001"
+                             class="radio-button-group__input">
+                      <label for="section-3_radio-001" class="radio-button-group__label">
+                        Кабинетная
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" value="открытая" name="layout" id="section-3_radio-002"
+                             class="radio-button-group__input">
+                      <label for="section-3_radio-002" class="radio-button-group__label">
+                        Открытая
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" value="коридорная" name="layout" id="section-3_radio-003"
+                             class="radio-button-group__input">
+                      <label for="section-3_radio-003" class="radio-button-group__label">
+                        Коридорная
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" value="смешанная" name="layout" id="section-3_radio-004"
+                             class="radio-button-group__input">
+                      <label for="section-3_radio-004" class="radio-button-group__label">
+                        Смешанная
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Кол-во мокрых точек</div>
+                <div class="form__disc">
+                  <div class="select">
+                    <input type="hidden" name="" class="select__input">
+                    <div class="select__header">
+                      <div data-value="" class="select__current"></div>
+                    </div>
+                    <div class="select__body">
+                      <div data-value="нет" id="wet-spots" class="select__item">нет</div>
+                      <div class="select__item" data-value="1">1</div>
+                      <div class="select__item" data-value="2">2</div>
+                      <div class="select__item" data-value="3">3</div>
+                      <div class="select__item" data-value="4">4</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Электрическая мощность</div>
+                <div class="form__disc">
+                  <input type="text" name="electric-power" class="input"><span>кВТ</span>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Состояние</div>
+                <div class="form__disc">
+                  <div class="select">
+                    <input type="hidden" name="" class="select__input">
+                    <div class="select__header">
+                      <div data-value="Не выбранно" id="condition" class="select__current">Не выбранно</div>
+                    </div>
+                    <div class="select__body">
+                      <div class="select__item" data-value="Офисная отделка">Офисная отделка</div>
+                      <div class="select__item" data-value="Требуется капитальный ремонт">Требуется капитальный ремонт
+                      </div>
+                      <div class="select__item" data-value="Требуется косметический ремонт">Требуется косметический
+                        ремонт
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Мебель</div>
+                <div class="form__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="has-furniture" value="yes" id="section-2_radio-2301"
+                             class="radio-button-group__input">
+                      <label for="section-2_radio-2301" class="radio-button-group__label">
+                        Есть
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="has-furniture" value="no" id="section-2_radio-2302"
+                             class="radio-button-group__input">
+                      <label for="section-2_radio-2302" class="radio-button-group__label">
+                        Нет
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">
+                  Доступ
+                </div>
+                <div class="form__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="access" value="свободный " id="section-2_radio-223"
+                             class="radio-button-group__input">
+                      <label for="section-2_radio-223" class="radio-button-group__label">
+                        Свободный
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="access" value="пропускная система" id="section-2_radio-23324"
+                             class="radio-button-group__input">
+                      <label for="section-2_radio-23324" class="radio-button-group__label">
+                        Пропускная система
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Парковка</div>
+                <div class="form__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="parking-type" id="section-4_radio-11" value="Наземная"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-11" class="radio-button-group__label">
+                        Наземная
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="parking-type" id="section-4_radio-21454" value="Многоуровневая"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-21454" class="radio-button-group__label">
+                        Многоуровневая
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="parking-type" id="section-421_radio-3314" value="Подземная"
+                             class="radio-button-group__input">
+                      <label for="section-421_radio-3314" class="radio-button-group__label">
+                        Подземная
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="parking-type" id="section-4_radio-41256" value="На крыше"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-41256" class="radio-button-group__label">
+                        На крыше
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Кол-во мест</div>
+                <div class="form__disc">
+                  <input type="text" name="place-count" class="input">
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Стоимость парковки</div>
+                <div class="form__disc">
+                  <div class="row">
+                    <input type="text" name="parking-price" class="input"> <span>в месяц</span>
+                    <div class="radio-button-group radio-button-group--no-tab">
+                      <div class="radio-button-group__item">
+                        <input type="checkbox" name="is-penthouse" id="section-2_checkbox-1"
+                               class="radio-button-group__input">
+                        <label for="section-2_checkbox-1" class="radio-button-group__label">
+                          <div class="radio-button-group__fake-box"></div>
+                          <div>Бесплатная</div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">О здании</h3>
+          <div class="form__section-content">
+            <ul class="form__input-list">
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Название</div>
+                <div class="form__disc">
+                  <input type="text" name="nameing" placeholder="Пример: ЖК “ Адмирал”" class="input">
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Год постройки</div>
+                <div class="form__disc">
+                  <input type="text" name="building-year" class="input">
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Тип здания</div>
+                <div class="form__disc">
+                  <div class="select">
+                    <input type="hidden" name="" class="select__input">
+                    <div class="select__header select__header--rectaingle">
+                      <div data-value="Выбирите тип здания" id="building-type" class="select__current">Выбирите тип
+                        здания
+                      </div>
+                    </div>
+                    <div class="select__body">
+                      <div class="select__item" data-value="Админитстративное здание">Админитстративное здание</div>
+                      <div class="select__item" data-value="Бизнес-центр">Бизнес-центр</div>
+                      <div class="select__item" data-value="Деловой центр">Деловой центр</div>
+                      <div class="select__item" data-value="Деловой квартал">Деловой квартал</div>
+                      <div class="select__item" data-value="Деловой дом">Деловой дом</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">
+                  Класс здания
+                </div>
+                <div class="form__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="building-level" id="section-4_radio-1123" value="А"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-1123" class="radio-button-group__label">
+                        А
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="building-level" id="section-4_radio-21432454" value="А+"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-21432454" class="radio-button-group__label">
+                        А+
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="building-level" id="section-421_radio-32344" value="В"
+                             class="radio-button-group__input">
+                      <label for="section-421_radio-32344" class="radio-button-group__label">
+                        В
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="building-level" id="section-4_radio-456" value="В+"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-456" class="radio-button-group__label">
+                        В+
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="building-level" id="section-4_radio-45634" value="В-"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-45634" class="radio-button-group__label">
+                        В-
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="building-level" id="section-4_radio-4534" value="С"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-4534" class="radio-button-group__label">
+                        С
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Площадь здания</div>
+                <div class="form__disc">
+                  <input type="text" name="building-square" class="input">
+                  <span>м <sup>2</sup></span>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Участок</div>
+                <div class="form__disc">
+                  <div class="row row--no-wrap">
+                    <input type="text" name="plot" class="input"> <span>га</span>
+                    <div class="radio-button-group radio-button-group--no-tab">
+                      <div class="radio-button-group__item">
+                        <input type="checkbox" name="parking-type" id="section-4_radio-1134" value="в собственности"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-1134" class="radio-button-group__label">
+                          <div class="radio-button-group__fake-box"></div>
+                          в собственности
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="checkbox" name="parking-type" id="section-4_radio-123" value="в аренде"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-123" class="radio-button-group__label">
+                          <div class="radio-button-group__fake-box"></div>
+                          в аренде
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Категория</div>
+                <div class="form__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="category" id="section-4_radio-131" value="Действующее"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-131" class="radio-button-group__label">
+                        Действующее
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="category" id="section-4_radio-214" value="Проект"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-214" class="radio-button-group__label">
+                        Проект
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="category" id="section-4_radio-2123" value="Строящееся"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-2123" class="radio-button-group__label">
+                        Строящееся
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Девелопер</div>
+                <div class="form__disc">
+                  <input type="text" name="developer" class="input">
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--radio-grid">
+                <div class="form__name">Управляющая компания</div>
+                <div class="form__disc">
+                  <input type="text" name="management-company" class="input">
+                </div>
+              </li>
+              <li class="form__input-item">
+                <div class="form__name">Общее</div>
+                <div class="form__disc">
+                  <div class="radio-button-group radio-button-group--no-tab">
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              value="Квартира"
+                              name="object-type"
+                              id="section-4_radio-453324"
+                              class="radio-button-group__input">
+                      <label for="section-4_radio-453324" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Отопление
+                      </label>
+                      <div class="radio-button-group radio-button-group--no-tab radio-button-group--column">
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dwsf12" name="heating" class="radio-button-group__input">
+                          <label for="dwsf12" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            автономное
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="sdfa" name="heating" class="radio-button-group__input">
+                          <label for="sdfa" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            центральное
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dsfaas" name="heating" class="radio-button-group__input">
+                          <label for="dsfaas" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            нет
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              value="Вентиляция"
+                              name="object-type"
+                              id="section-4_radio-443"
+                              class="radio-button-group__input">
+                      <label for="section-4_radio-443" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Вентиляция
+                      </label>
+                      <div class="radio-button-group radio-button-group--no-tab radio-button-group--column">
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dslfkj" name="ventilation" class="radio-button-group__input">
+                          <label for="dslfkj" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            естественная
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="fsdg" name="ventilation" class="radio-button-group__input">
+                          <label for="fsdg" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            приточная
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dslf453" name="ventilation" class="radio-button-group__input">
+                          <label for="dslf453" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            нет
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              value="Кондиционир-е"
+                              name="object-type"
+                              id="section-4_radio-4523"
+                              class="radio-button-group__input">
+                      <label for="section-4_radio-4523" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Кондиционир-е
+                      </label>
+                      <div class="radio-button-group radio-button-group--no-tab radio-button-group--column">
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dfs134" name="dsfk3" class="radio-button-group__input">
+                          <label for="dfs134" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            местное
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dfs13sdf4" name="dsfk3" class="radio-button-group__input">
+                          <label for="dfs13sdf4" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            центральное
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dsdfs134" name="dsfk3" class="radio-button-group__input">
+                          <label for="dsdfs134" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            нет
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              value="Система пожаротуш-я"
+                              name="object-type"
+                              id="section-4_radio-42353"
+                              class="radio-button-group__input">
+                      <label for="section-4_radio-42353" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Система пожаротуш-я
+                      </label>
+                      <div class="radio-button-group radio-button-group--no-tab radio-button-group--column">
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dsf3" name="fire-extinguishing-system"
+                                 class="radio-button-group__input">
+                          <label for="dsf3" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            гидрантная
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dsf334" name="fire-extinguishing-system"
+                                 class="radio-button-group__input">
+                          <label for="dsf334" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            спринклерная
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dsf3234" name="fire-extinguishing-system"
+                                 class="radio-button-group__input">
+                          <label for="dsf3234" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            порошковая
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dsf33df" name="fire-extinguishing-system"
+                                 class="radio-button-group__input">
+                          <label for="dsf33df" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            газовая
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dsf332d" name="fire-extinguishing-system"
+                                 class="radio-button-group__input">
+                          <label for="dsf332d" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            сигнализация
+                          </label>
+                        </div>
+                        <div class="radio-button-group__item">
+                          <input type="radio" id="dsf234" name="fire-extinguishing-system"
+                                 class="radio-button-group__input">
+                          <label for="dsf234" class="radio-button-group__label">
+                            <div class="radio-button-group__fake-box"></div>
+                            нет
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">Инфраструктура</h3>
+          <div class="form__section-content--flex-wrapper">
+            <div class="col">
+              <div class="radio-button-group radio-button-group--no-tab radio-button-group--column">
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-343" class="radio-button-group__input">
+                  <label for="section435_check-343" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Автомойка
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-349345345" class="radio-button-group__input">
+                  <label for="section435_check-349345345" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Автосервис
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-3467" class="radio-button-group__input">
+                  <label for="section435_check-3467" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Аптека
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-349045" class="radio-button-group__input">
+                  <label for="section435_check-349045" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Ателье одежды
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-34945" class="radio-button-group__input">
+                  <label for="section435_check-34945" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Банкомат
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-34953" class="radio-button-group__input">
+                  <label for="section435_check-34953" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Бассейн
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-34967" class="radio-button-group__input">
+                  <label for="section435_check-34967" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Буфет
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="radio-button-group radio-button-group--no-tab radio-button-group--column">
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-349673" class="radio-button-group__input">
+                  <label for="section435_check-349673" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Выставочно-складской комплекс
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-536f" class="radio-button-group__input">
+                  <label for="section435_check-536f" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Гостиница
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-rwest" class="radio-button-group__input">
+                  <label for="section435_check-rwest" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Кафе
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-fdg6" class="radio-button-group__input">
+                  <label for="section435_check-fdg6" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Кинотеатр
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-435vf" class="radio-button-group__input">
+                  <label for="section435_check-435vf" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Конференц-зал
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-dfg4" class="radio-button-group__input">
+                  <label for="section435_check-dfg4" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Медицинский центр
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-d34fg4" class="radio-button-group__input">
+                  <label for="section435_check-d34fg4" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Минимаркет
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="radio-button-group radio-button-group--no-tab radio-button-group--column">
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-fyege" class="radio-button-group__input">
+                  <label for="section435_check-fyege" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Нотариальная контора
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-fsdg4" class="radio-button-group__input">
+                  <label for="section435_check-fsdg4" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Отделение банка
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-fdg5" class="radio-button-group__input">
+                  <label for="section435_check-fdg5" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Парк
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-dfg4sdf" class="radio-button-group__input">
+                  <label for="section435_check-dfg4sdf" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Ресторан
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-gfh4" class="radio-button-group__input">
+                  <label for="section435_check-gfh4" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Салон красоты
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-dgfh5" class="radio-button-group__input">
+                  <label for="section435_check-dgfh5" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Складское помещение
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-gh556" class="radio-button-group__input">
+                  <label for="section435_check-gh556" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Столовая
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="radio-button-group radio-button-group--no-tab radio-button-group--column">
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-349001" class="radio-button-group__input">
+                  <label for="section435_check-349001" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Супермаркет
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-349002" class="radio-button-group__input">
+                  <label for="section435_check-349002" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Торговая зона
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-349003" class="radio-button-group__input">
+                  <label for="section435_check-349003" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Фитнес-центр
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-349004" class="radio-button-group__input">
+                  <label for="section435_check-349004" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Фотосалон
+                  </label>
+                </div>
+                <div class="radio-button-group__item">
+                  <input type="checkbox" name="" id="section435_check-349005" class="radio-button-group__input">
+                  <label for="section435_check-349005" class="radio-button-group__label">
+                    <div class="radio-button-group__fake-box"></div>
+                    Центральная рецепция
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">Фотографии</h3>
+          <h4 class="form__section-sub-title">Не допускаются к размещению фотографии с водяными знаками, чужих объектов
+            и
+            рекламные баннеры. JPG, PNG или GIF. Максимальный размер файла 10 мб</h4>
+          <div class="form__section-content">
+            <div class="photo-input">
+              <input type="file" name="photos" id="upload-file__input-1" class="photo-input__input" multiple
+                     accept="image/jpeg,image/png,image/gif">
+              <label for="upload-file__input-1" class="photo-input__label"></label>
+            </div>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">Описание</h3>
+          <div class="form__section-content">
+            <textarea
+                    name="description"
+                    rows="10"
+                    class="textarea"
+                    placeholder="Расскажите в каком состоянии полы, окна, сантехника, есть ли счетчики, была ли перепланировка, сколько было хозяев и какие соседи."
+            ></textarea>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">Цена и условия сделки</h3>
+          <div class="form__section-content">
+            <ul class="form__input-list">
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Цена</div>
+                <div class="form disc">
+                  <div class="row"><input type="text" name="price" class="input">
+                    <div class="radio-button-group radio-button-group--no-tab">
+                      <div class="radio-button-group__item">
+                        <input
+                                type="checkbox"
+                                value="is-mortgage"
+                                name="building-type"
+                                id="section-5_radio-3"
+                                class="radio-button-group__input">
+                        <label for="section-5_radio-3" class="radio-button-group__label">
+                          <div class="radio-button-group__fake-box"></div>
+                          Возможна ипотека
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Тип продажи</div>
+                <div class="form disc">
+                  <div class="row">
+                    <div class="radio-button-group">
+                      <div class="radio-button-group__item">
+                        <input
+                                type="radio"
+                                value="Свободная проджа"
+                                name="sale-type"
+                                id="section-5_radio-34"
+                                class="radio-button-group__input">
+                        <label for="section-5_radio-34" class="radio-button-group__label">Свободная проджа</label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input
+                                type="radio"
+                                value="Альтернатива"
+                                name="sale-type"
+                                id="section-5_radio-345"
+                                class="radio-button-group__input">
+                        <label for="section-5_radio-345" class="radio-button-group__label">Альтернатива</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Тариф</div>
+                <div class="form disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Продвинутый"
+                              name="tariff"
+                              id="section-5_radio-334"
+                              class="radio-button-group__input">
+                      <label for="section-5_radio-334" class="radio-button-group__label">Продвинутый</label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Свободный"
+                              name="tariff"
+                              id="section-5_radio-32345"
+                              class="radio-button-group__input">
+                      <label for="section-5_radio-32345" class="radio-button-group__label">Свободный</label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Эксклюзивный"
+                              name="tariff"
+                              id="section-5_radio-33445"
+                              class="radio-button-group__input">
+                      <label for="section-5_radio-33445" class="radio-button-group__label">Эксклюзивный</label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="submit-button">Очистить объявление</button>
+      </form>
+      <div class="announcement__validation">
+        <ul class="todo-list">
+          <li data-section-id="1" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Тип объявления</div>
+          </li>
+          <li data-section-id="2" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Адрес</div>
+          </li>
+          <li data-section-id="3" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Об объекте</div>
+          </li>
+          <li data-section-id="4" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">О здании</div>
+          </li>
+          <li data-section-id="5" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Фотографии</div>
+          </li>
+          <li data-section-id="6" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Описание</div>
+          </li>
+          <li data-section-id="7" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Цена и условие сделки</div>
+          </li>
+        </ul>
+        <button class="submit-button submit-button--samll">Очистить объявление</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer style="overflow: hidden" class="footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      <img src="/public/pa-public/img/global/logo.svg" class="footer-wrapper-logo" alt="logo">
+
+      <ul class="our-positions-link footer-links">
+        <li class="our-positions-link-item footer-links-item">
+          <a href="#" class="our-positions-link-item-text footer-links-item-text">
+            Недвижимость
+          </a>
+        </li>
+        <li class="our-positions-link-item footer-links-item">
+          <a href="#" class="our-positions-link-item-text footer-links-item-text">
+            Новостройки
+          </a>
+        </li>
+        <li class="our-positions-link-item footer-links-item">
+          <a href="#" class="our-positions-link-item-text footer-links-item-text">
+            Услуги
+          </a>
+        </li>
+        <li class="our-positions-link-item footer-links-item">
+          <a href="#" class="our-positions-link-item-text footer-links-item-text">
+            Покупателям
+          </a>
+        </li>
+        <li class="our-positions-link-item footer-links-item">
+          <a href="#" class="our-positions-link-item-text footer-links-item-text">
+            Продавцам
+          </a>
+        </li>
+        <li class="our-positions-link-item footer-links-item">
+          <a href="#" class="our-positions-link-item-text footer-links-item-text">
+            О нас
+          </a>
+        </li>
+        <li class="our-positions-link-item footer-links-item">
+          <a href="#" class="our-positions-link-item-text footer-links-item-text">
+            Блог
+          </a>
+        </li>
+      </ul>
+
+      <ul class="our-list-link footer-links">
+        <li class="our-list-link-item footer-links-item">
+          <a href="#" class="our-list-link-item-link footer-links-item-text">
+            Список покупателей
+          </a>
+        </li>
+        <li class="our-list-link-item footer-links-item">
+          <a href="#" class="our-list-link-item-link footer-links-item-text">
+            Ипотечный калькулятор
+          </a>
+        </li>
+        <li class="our-list-link-item footer-links-item">
+          <a href="#" class="our-list-link-item-link footer-links-item-text">
+            Специалисты по недвижемости
+          </a>
+        </li>
+        <li class="our-list-link-item footer-links-item">
+          <a href="#" class="our-list-link-item-link footer-links-item-text">
+            Юридическое сопровождение
+          </a>
+        </li>
+        <li class="our-list-link-item footer-links-item">
+          <a href="#" class="our-list-link-item-link footer-links-item-text">
+            Стоимость услуг
+          </a>
+        </li>
+        <li class="our-list-link-item footer-links-item">
+          <a href="#" class="our-list-link-item-link footer-links-item-text">
+            Ипотека
+          </a>
+        </li>
+        <li class="our-list-link-item footer-links-item">
+          <a href="#" class="our-list-link-item-link footer-links-item-text">
+            Контакты
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer-wrapper-call-section">
+        <div class="footer-call">
+          <a href="tel: 88043332374" class="footer-call-me">
+            <img src="/public/pa-public/img/header/footer-call-icon.svg" alt="footer call me">
+            <span class="footer-call-me-text">Перезвоните мне</span>
+          </a>
+          <a href="tel: 88043332374" class="footer-call-number">8 804 333 23 74</a>
+        </div>
+
+        <a href="create_announcement/" class="add-advert">
+          <img src="/public/pa-public/img/global/plus.svg" alt="plus icon">
+          <span class="add-advert-text">Добавить объявление</span>
+        </a>
+      </div>
+
+      <div class="footer-wrapper-social-link">
+        <a href="#" class="footer-wrapper-social-link-item">
+          <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.1055 11.6216C13.1055 12.7844 12.1628 13.727 11 13.727C9.83716 13.727 8.89453 12.7844 8.89453 11.6216C8.89453 10.4587 9.83716 9.51608 11 9.51608C12.1628 9.51608 13.1055 10.4587 13.1055 11.6216Z"
+                  fill="white" fill-opacity="0.32"/>
+            <path d="M15.9241 7.89642C15.8229 7.62216 15.6615 7.37392 15.4516 7.17015C15.2479 6.96034 14.9998 6.79887 14.7254 6.69766C14.5028 6.61122 14.1685 6.50833 13.5526 6.4803C12.8864 6.44992 12.6867 6.44337 11.0002 6.44337C9.31349 6.44337 9.11375 6.44975 8.44774 6.48013C7.83191 6.50833 7.49739 6.61122 7.27499 6.69766C7.00056 6.79887 6.75232 6.96034 6.54872 7.17015C6.33891 7.37392 6.17744 7.62199 6.07607 7.89642C5.98962 8.11899 5.88673 8.45351 5.8587 9.06934C5.82832 9.73535 5.82178 9.93509 5.82178 11.6218C5.82178 13.3083 5.82832 13.508 5.8587 14.1742C5.88673 14.7901 5.98962 15.1244 6.07607 15.347C6.17744 15.6214 6.33875 15.8695 6.54855 16.0732C6.75232 16.2831 7.0004 16.4445 7.27483 16.5457C7.49739 16.6323 7.83191 16.7352 8.44774 16.7633C9.11375 16.7936 9.31332 16.8 11 16.8C12.6869 16.8 12.8866 16.7936 13.5525 16.7633C14.1683 16.7352 14.5028 16.6323 14.7254 16.5457C15.2762 16.3332 15.7116 15.8978 15.9241 15.347C16.0106 15.1244 16.1135 14.7901 16.1417 14.1742C16.172 13.508 16.1784 13.3083 16.1784 11.6218C16.1784 9.93509 16.172 9.73535 16.1417 9.06934C16.1136 8.45351 16.0107 8.11899 15.9241 7.89642ZM11.0002 14.8651C9.20876 14.8651 7.75655 13.413 7.75655 11.6216C7.75655 9.83018 9.20876 8.37814 11.0002 8.37814C12.7914 8.37814 14.2437 9.83018 14.2437 11.6216C14.2437 13.413 12.7914 14.8651 11.0002 14.8651ZM14.3719 9.0079C13.9533 9.0079 13.6139 8.66852 13.6139 8.24991C13.6139 7.8313 13.9533 7.49191 14.3719 7.49191C14.7905 7.49191 15.1299 7.8313 15.1299 8.24991C15.1297 8.66852 14.7905 9.0079 14.3719 9.0079Z"
+                  fill="white" fill-opacity="0.32"/>
+            <path d="M11 0.621582C4.9258 0.621582 0 5.54738 0 11.6216C0 17.6958 4.9258 22.6216 11 22.6216C17.0742 22.6216 22 17.6958 22 11.6216C22 5.54738 17.0742 0.621582 11 0.621582ZM17.2783 14.2257C17.2478 14.8981 17.1408 15.3572 16.9847 15.759C16.6566 16.6075 15.9859 17.2782 15.1374 17.6063C14.7358 17.7624 14.2765 17.8692 13.6043 17.8999C12.9307 17.9306 12.7156 17.938 11.0002 17.938C9.28461 17.938 9.0696 17.9306 8.39586 17.8999C7.72363 17.8692 7.2644 17.7624 6.86275 17.6063C6.44112 17.4477 6.05943 17.1991 5.74388 16.8777C5.42262 16.5623 5.17404 16.1805 5.01543 15.759C4.85933 15.3573 4.75241 14.8981 4.72186 14.2259C4.69081 13.5522 4.68359 13.337 4.68359 11.6216C4.68359 9.90619 4.69081 9.69101 4.72169 9.01744C4.75224 8.34505 4.85899 7.88599 5.01509 7.48416C5.17371 7.0627 5.42245 6.68085 5.74388 6.36546C6.05927 6.04404 6.44112 5.79546 6.86258 5.63684C7.2644 5.48074 7.72346 5.37399 8.39586 5.34328C9.06943 5.31256 9.28461 5.30518 11 5.30518C12.7154 5.30518 12.9306 5.31256 13.6041 5.34344C14.2765 5.37399 14.7356 5.48074 15.1374 5.63667C15.5589 5.79529 15.9407 6.04404 16.2563 6.36546C16.5775 6.68102 16.8263 7.0627 16.9847 7.48416C17.141 7.88599 17.2478 8.34505 17.2785 9.01744C17.3092 9.69101 17.3164 9.90619 17.3164 11.6216C17.3164 13.337 17.3092 13.5522 17.2783 14.2257Z"
+                  fill="white" fill-opacity="0.32"/>
+          </svg>
+        </a>
+        <a href="#" class="footer-wrapper-social-link-item">
+          <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 11.6216C22 5.54738 17.0742 0.621582 11 0.621582C4.9258 0.621582 0 5.54738 0 11.6216C0 17.6958 4.9258 22.6216 11 22.6216C11.0646 22.6216 11.1289 22.6202 11.1934 22.6191V14.056H8.83008V11.3018H11.1934V9.27509C11.1934 6.92456 12.6283 5.64523 14.725 5.64523C15.7291 5.64523 16.5921 5.72009 16.8438 5.75349V8.2101H15.3979C14.2572 8.2101 14.0363 8.75224 14.0363 9.54767V11.3018H16.7639L16.4084 14.056H14.0363V22.1966C18.6342 20.8785 22 16.6425 22 11.6216Z"
+                  fill="white" fill-opacity="0.32"/>
+          </svg>
+        </a>
+        <a href="#" class="footer-wrapper-social-link-item">
+          <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 0.621582C4.92507 0.621582 0 5.54643 0 11.6216C0 17.6967 4.92507 22.6216 11 22.6216C17.0749 22.6216 22 17.6967 22 11.6216C22 5.54643 17.0749 0.621582 11 0.621582ZM16.5798 12.8113C17.0925 13.312 17.6349 13.7833 18.0951 14.3359C18.299 14.5803 18.4913 14.833 18.6375 15.1173C18.8464 15.5226 18.6578 15.9671 18.295 15.9912L16.0414 15.9907C15.4594 16.0389 14.9962 15.8042 14.6058 15.4063C14.294 15.0891 14.0048 14.7504 13.7046 14.4225C13.5819 14.2879 13.4527 14.1612 13.2988 14.0615C12.9916 13.8616 12.7247 13.9229 12.5487 14.2438C12.3693 14.5704 12.3283 14.9323 12.3112 15.2957C12.2867 15.8271 12.1264 15.966 11.5933 15.991C10.454 16.0443 9.37301 15.8715 8.36833 15.2971C7.48203 14.7905 6.79603 14.0755 6.19826 13.2659C5.03423 11.6878 4.14275 9.95566 3.34175 8.17383C3.16147 7.77254 3.29336 7.55783 3.73606 7.5495C4.47157 7.53532 5.20708 7.53712 5.94259 7.54882C6.24192 7.55355 6.43998 7.72483 6.55499 8.00728C6.95245 8.98518 7.43971 9.9156 8.05031 10.7785C8.21303 11.0083 8.37913 11.2374 8.61567 11.3997C8.87675 11.5788 9.0757 11.5196 9.19881 11.2282C9.27759 11.0429 9.31157 10.8449 9.32868 10.6464C9.38719 9.96646 9.39417 9.28677 9.29289 8.60955C9.22987 8.18576 8.99153 7.91208 8.56908 7.83195C8.35392 7.79122 8.38543 7.71155 8.49009 7.58866C8.67171 7.3762 8.84186 7.24476 9.18193 7.24476L11.7281 7.24431C12.1294 7.32309 12.2194 7.50314 12.2739 7.90735L12.2761 10.7369C12.2714 10.8933 12.3547 11.3569 12.6355 11.4593C12.8606 11.5336 13.0091 11.3531 13.1437 11.2106C13.7543 10.5627 14.1894 9.79789 14.579 9.00634C14.7509 8.65726 14.8992 8.29604 15.0433 7.93413C15.1504 7.66653 15.317 7.53487 15.619 7.53937L18.0708 7.5423C18.1431 7.5423 18.2164 7.54297 18.288 7.55535C18.7012 7.62602 18.8144 7.80382 18.6866 8.20691C18.4854 8.84024 18.0945 9.36779 17.7123 9.89669C17.3027 10.463 16.8658 11.0094 16.4603 11.5781C16.0876 12.098 16.1171 12.3598 16.5798 12.8113Z"
+                  fill="white" fill-opacity="0.32"/>
+          </svg>
+        </a>
+        <a href="#" class="footer-wrapper-social-link-item">
+          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.9687 9.73827C13.0163 9.73444 13.8507 8.89068 13.8469 7.83806C13.843 6.78498 13.0069 5.94707 11.9588 5.94617C10.9019 5.94504 10.0579 6.79849 10.066 7.86101C10.0738 8.90981 10.9176 9.7421 11.9687 9.73827Z"
+                  fill="white" fill-opacity="0.32"/>
+            <path d="M11.9582 0.621582C5.89884 0.621582 0.986816 5.54666 0.986816 11.6216C0.986816 17.6965 5.89884 22.6216 11.9582 22.6216C18.0175 22.6216 22.9295 17.6965 22.9295 11.6216C22.9295 5.54666 18.0175 0.621582 11.9582 0.621582ZM11.9739 3.96671C14.1109 3.97256 15.8262 5.72513 15.8152 7.89137C15.8044 10.0076 14.0611 11.7229 11.9276 11.7157C9.81598 11.7085 8.08413 9.95318 8.0967 7.83263C8.1086 5.6889 9.84135 3.96086 11.9739 3.96671ZM16.3023 13.238C15.8297 13.7244 15.2609 14.0764 14.6292 14.3219C14.0321 14.5539 13.3778 14.6707 12.7299 14.7486C12.828 14.8553 12.874 14.9077 12.9351 14.969C13.8142 15.855 14.6975 16.7366 15.5736 17.6252C15.8722 17.9281 15.9344 18.3035 15.77 18.6553C15.5907 19.0401 15.1882 19.2931 14.7933 19.2659C14.5433 19.2485 14.3482 19.1241 14.1751 18.9492C13.5116 18.2799 12.8354 17.6225 12.1858 16.9405C11.9961 16.742 11.9054 16.7798 11.7382 16.9522C11.0708 17.6414 10.3924 18.3195 9.71025 18.994C9.40384 19.2969 9.03929 19.3519 8.68371 19.1786C8.30592 18.9954 8.06573 18.6085 8.08413 18.2193C8.09715 17.9569 8.226 17.7557 8.40604 17.5761C9.27634 16.7053 10.1439 15.8319 11.0118 14.9591C11.0695 14.9012 11.1229 14.8398 11.2066 14.7497C10.023 14.6257 8.95556 14.3336 8.04171 13.6172C7.92812 13.5281 7.81117 13.4421 7.70791 13.3422C7.30767 12.9571 7.26748 12.5158 7.58377 12.0616C7.85472 11.6727 8.30906 11.5687 8.78159 11.7922C8.87317 11.8352 8.96027 11.8896 9.04378 11.9472C10.7467 13.1205 13.0862 13.1527 14.7958 11.9997C14.9651 11.8701 15.1462 11.7634 15.3561 11.7096C15.7637 11.6043 16.1445 11.7548 16.3631 12.1127C16.6134 12.5216 16.6105 12.9204 16.3023 13.238Z"
+                  fill="white" fill-opacity="0.32"/>
+          </svg>
+        </a>
+        <a href="#" class="footer-wrapper-social-link-item">
+          <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11.6216" r="11" fill="white" fill-opacity="0.32"/>
+            <path d="M13.3226 6.11279H11.7524C10.1615 6.11279 8.55629 7.28753 8.55629 9.91199C8.55629 11.2714 9.13247 12.3302 10.1886 12.9323L8.25551 16.4311C8.16388 16.5966 8.1615 16.7841 8.24912 16.9328C8.33467 17.0779 8.49105 17.1646 8.66743 17.1646H9.64521C9.86735 17.1646 10.0406 17.0572 10.1236 16.8691L11.9361 13.3241H12.0683V16.7228C12.0683 16.9623 12.2705 17.1646 12.5097 17.1646H13.3639C13.6322 17.1646 13.8195 16.9773 13.8195 16.7091V6.59638C13.8195 6.31166 13.6152 6.11279 13.3226 6.11279ZM12.0684 11.7494H11.8351C10.9303 11.7494 10.3901 11.0108 10.3901 9.77377C10.3901 8.2356 11.0725 7.68757 11.7111 7.68757H12.0684V11.7494Z"
+                  fill="#262626"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p class="footer-copyright-text">Политика конфиденциальности и условия использования © 2020 Все права защищены</p>
+      <a href="#" class="footer-copyright-address">г.Краснодар, ул. Ленина 64/1</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ef8a2e73-0459-425b-abd9-5821f6a6211b&lang=ru_RU"
+        type="text/javascript">
+</script>
+<script type="text/javascript">
+  // Функция ymaps.ready() будет вызвана, когда
+  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+  ymaps.ready(init);
+
+  function init() {
+    // Создание карты.
+    var myMap = new ymaps.Map("map", {
+      // Координаты центра карты.
+      // Порядок по умолчанию: «широта, долгота».
+      // Чтобы не определять координаты центра карты вручную,
+      // воспользуйтесь инструментом Определение координат.
+      center: [55.76, 37.64],
+      // Уровень масштабирования. Допустимые значения:
+      // от 0 (весь мир) до 19.
+      zoom: 7
+    });
+  }
+</script>
+
+<script src="./create_announcement/link-button.js"></script>
+<script src="./create_announcement/select.js"></script>
+<script src="./create_announcement/validation-2.js"></script>
+</body>
+</html>

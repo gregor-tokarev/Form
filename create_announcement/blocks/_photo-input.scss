@@ -1,0 +1,14 @@
+.photo-input {
+
+  &__label {
+    height: 173px;
+    border-radius: 2px;
+    display: block;
+    border: 2px solid #138ff9;
+    background: url("./photo-input-bg.png") no-repeat center;
+  }
+
+  &__input {
+    @include visually-hidden;
+  }
+}

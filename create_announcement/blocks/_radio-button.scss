@@ -1,0 +1,131 @@
+.radio-button-group {
+  display: flex;
+
+
+  &__input {
+    @include visually-hidden;
+
+    &:checked + .radio-button-group__label {
+      background-color: #138ff9;
+      color: #fff;
+      border: 2px solid #138ff9;
+      border-right: 2px solid #138ff9;
+
+      &:last-child {
+        border-right-color: #138ff9;
+      }
+    }
+  }
+
+  &--column {
+    display: block;
+  }
+
+  &__label {
+    border: 2px solid #E5E5E5;
+    padding: 6px 12px;
+    border-right: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 115.8%;
+
+    a {
+      text-decoration: none;
+      color: initial;
+    }
+  }
+
+  &__item {
+    &:last-child {
+      .radio-button-group__label {
+        padding-right: 12px;
+        position: relative;
+        border-right: 2px solid #E5E5E5;
+        border-radius: 0 500rem 500rem 0;
+      }
+    }
+
+    &:first-child {
+      .radio-button-group__label {
+        padding-left: 12px;
+        position: relative;
+        border-radius: 500rem 0 0 500rem;
+      }
+    }
+  }
+
+  &--no-tab {
+    margin: 0;
+
+    .radio-button-group__input {
+      @include visually-hidden;
+
+      &:checked + .radio-button-group__label {
+        background-color: initial;
+        color: initial;
+        border: none;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    .radio-button-group__item:last-child {
+      .radio-button-group__label {
+          border-right: none;
+      }
+    }
+
+    .radio-button-group__label {
+      border: none;
+      background: none;
+      display: flex;
+      align-items: center;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    .radio-button-group__input[type="radio"] + .radio-button-group__label > .radio-button-group__fake-box {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid #E5E5E5;
+    }
+
+    .radio-button-group__input[type="radio"]:checked + .radio-button-group__label > .radio-button-group__fake-box {
+      background: url("./radio-effect.svg") no-repeat center;
+    }
+
+    .radio-button-group__input[type="checkbox"] + .radio-button-group__label > .radio-button-group__fake-box {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      border-radius: 2px;
+      border: 2px solid #E5E5E5;
+    }
+
+    .radio-button-group__input[type="checkbox"]:checked + .radio-button-group__label > .radio-button-group__fake-box {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+      border: none;
+      background: url("./checkbox-effectsvg.svg") no-repeat center;
+    }
+  }
+
+  @media ($tablet) {
+    padding: 10px 0;
+  }
+
+  @media ($mobile) {
+    margin-top: 30px;
+    width: 100%;
+    overflow-x: auto;
+  }
+}

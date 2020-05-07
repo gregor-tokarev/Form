@@ -1,0 +1,41 @@
+.link-button {
+  color: #138ff9;
+  font-family: $def_font;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  padding-right: 24px;
+  position: relative;
+  line-height: 13.9px;
+  text-decoration: underline;
+
+  &::after {
+    content: url("./arrow.svg");
+    display: block;
+    position: absolute;
+    transition: all 0.4s;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 8px;
+  }
+
+  &--active {
+    &::after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+
+  &__target {
+    transform-origin: 50% 0;
+    transform: scaleY(0);
+    height: 0;
+    transition: height .4s, transform .2s;
+
+    &--active {
+      height: initial;
+      transform: scaleY(1);
+    }
+  }
+
+  @extend %button-reset;
+}

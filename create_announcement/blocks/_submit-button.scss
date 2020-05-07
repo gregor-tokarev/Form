@@ -1,0 +1,16 @@
+.submit-button {
+  border-radius: 26px;
+  padding: 10px 25px;
+  margin-top: 25px;
+  color: #fff;
+  font-family: $def_font;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: rgba(139, 149, 157, 0.58);
+
+  &--samll {
+    padding: 10px 15px;
+  }
+
+  @extend %button-reset
+}

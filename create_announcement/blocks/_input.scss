@@ -1,0 +1,26 @@
+.input {
+  border-radius: 2px;
+  border: 1px solid #e5e5e5;
+  padding: 8px 12px;
+
+  &__label {
+    color: #737373;
+    font-family: $def_font;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  &--fluid {
+    width: 100%;
+  }
+
+
+  & + span {
+    margin-left: 1rem;
+    color: #000;
+    font-family: $def_font;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}

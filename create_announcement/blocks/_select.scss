@@ -1,0 +1,81 @@
+.select {
+  position: relative;
+  //z-index: 11;
+
+  &__header {
+    border: 1px solid #e5e5e5;
+    padding: 7px 50px 7px 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    border-radius: 26px;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+
+    &--rectaingle {
+      border-radius: 0;
+    }
+
+    &::after {
+      content: url("./arrow.svg");
+      display: block;
+      position: absolute;
+      transition: all .4s;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 8px;
+    }
+  }
+
+  &__icon {
+    transition: all .4s;
+  }
+
+  &--active {
+    .select__body {
+      transform: scaleY(1);
+      z-index: 50;
+    }
+
+    .select__item {
+      z-index: 34;
+    }
+
+    .select__header {
+      z-index: 5656;
+    }
+
+    .select__header::after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+
+  &__body {
+    transform: scaleY(0);
+    top: 15px;
+    overflow: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  &__item {
+    padding: 8px 12px;
+    width: 100%;
+    position: relative;
+    z-index: 33;
+    background-color: #fafafa;
+    border: 1px solid #e5e5e5;
+
+    &:first-child {
+      padding-top: 20px;
+      z-index: 11;
+    }
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}

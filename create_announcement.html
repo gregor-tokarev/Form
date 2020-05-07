@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./create_announcement/style.css">
+  <link rel="preload" href="./openSans/OpenSans-Regular.ttf" as="font">
+  <title>Новое объявление</title>
+</head>
+<body>
+<div class="announcement">
+  <div class="announcement__wrapper">
+    <h2 class="announcement__title">Новое объявление</h2>
+    <div class="announcement__content">
+      <form name="announcement" class="announcement__form form">
+        <div class="form__section form__section--large-mr">
+          <h3 class="form__section-title">Тип объявления</h3>
+          <div class="form__section-content">
+            <ul class="form__input-list">
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Тип недвижимости</div>
+                <div class="from__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Жилая"
+                              checked
+                              name="building-type"
+                              id="section-1_radio-1"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-1" class="radio-button-group__label">Жилая</label>
+                    </div>
+                    <div class="radio-button-group__item">
+                        <input
+                                type="radio"
+                                value="Коммерческая"
+                                name="building-type"
+                                id="section-1_radio-453"
+                                class="radio-button-group__input">
+                        <label for="section-1_radio-453" class="radio-button-group__label">
+                          <a href="create_announcement-2.html">Коммерческая</a>
+                        </label>
+                    </div>
+
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--radio-grid">
+                <div class="form__name">Объект</div>
+                <div class="form__disc">
+                  <div class="radio-button-group radio-button-group--no-tab">
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Квартира"
+                              name="object-type"
+                              id="section-1_radio-3"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-3" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Квартира
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Дом/дача"
+                              name="object-type"
+                              id="section-1_radio-5"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-5" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Дом/дача
+                      </label>
+                    </div>
+
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Участок"
+                              name="object-type"
+                              id="section-1_radio-6"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-6" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Участок
+                      </label>
+                    </div>
+                    <span class="form__spacer"></span>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Квартира в новостройке"
+                              name="object-type"
+                              id="section-1_radio-9"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-9" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Квартира в новостройке
+                      </label>
+                    </div>
+
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Комната"
+                              name="object-type"
+                              id="section-1_radio-7"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-7" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Комната
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Коттедж"
+                              name="object-type"
+                              id="section-1_radio-8"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-8" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Коттедж
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">Адрес</h3>
+          <div class="form__section-content">
+            <ul class="form__input-list">
+              <li class="form__input-item">
+                <input
+                        type="text"
+                        class="input input--fluid"
+                        name="address"
+                >
+              </li>
+              <li class="form__input-item">
+                <div
+                        id="map"
+                        style="
+                              width: 100%;
+                              height: 500px;
+                            "
+                ></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__section">
+          <div class="h3 form__section-title">Об объекте</div>
+          <div class="from__section-content">
+            <ul class="form__input-list">
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name ">Тип недвижимости</div>
+                <div class="form__disc">Квартира</div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Количество комнат</div>
+                <div class="form__disc">
+                  <div class="row">
+                    <div id="room-count" class="select">
+                      <input type="hidden" name="room-count" class="select__input">
+                      <div class="select__header">
+                        <div data-value="" class="select__current"></div>
+                      </div>
+                      <div class="select__body">
+                        <div class="select__item" data-value="1">1</div>
+                        <div class="select__item" data-value="2">2</div>
+                        <div class="select__item" data-value="3">3</div>
+                        <div class="select__item" data-value="4">4</div>
+                        <div class="select__item" data-value="5">5</div>
+                        <div class="select__item" data-value="6">6</div>
+                        <div class="select__item" data-value="7">7</div>
+                      </div>
+                    </div>
+                    <div class="radio-button-group radio-button-group--no-tab">
+                      <div class="radio-button-group__item">
+                        <input type="checkbox" name="is-penthouse" id="section-2_checkbox-1"
+                               class="radio-button-group__input">
+                        <label for="section-2_checkbox-1" class="radio-button-group__label">
+                          <div class="radio-button-group__fake-box"></div>
+                          <div>Пентхаус</div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="radio-button-group radio-button-group--no-tab">
+                    <div class="radio-button-group__item">
+                      <input type="checkbox" name="is-adjoining" id="section-2_checkbox-2"
+                             class="radio-button-group__input">
+                      <label for="section-2_checkbox-2" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        <div>Смежная</div>
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="checkbox" name="is-isolated" id="section-2_checkbox-3"
+                             class="radio-button-group__input">
+                      <label for="section-2_checkbox-3" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        <div>Изолированная</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name ">Общая площадь</div>
+                <div class="form__disc">
+                  <input type="text" name="full-square" class="input"><span>м<sup>2</sup></span>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name ">Этаж</div>
+                <div class="form__disc">
+                  <input type="text" name="level" class="input">
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name ">Этажей в доме</div>
+                <div class="form__disc">
+                  <input type="text" name="levels-count" class="input">
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name ">Жилая</div>
+                <div class="form__disc">
+                  <input type="text" name="living-square" class="input"> <span>м<sup>2</sup></span>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name ">Кухня</div>
+                <div class="form__disc">
+                  <input type="text" name="kitchen-square" class="input"> <span>м<sup>2</sup></span>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name ">Ремонт</div>
+                <div class="form__disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="repairs-type" id="section-4_radio-1" value="Косметический"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-1" class="radio-button-group__label">
+                        Косметический
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="repairs-type" id="section-4_radio-2" value="Евро"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-2" class="radio-button-group__label">
+                        Евро
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="repairs-type" id="section-4_radio-3" value="Дизайнерский"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-3" class="radio-button-group__label">
+                        Дизайнерский
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input type="radio" name="repairs-type" id="section-4_radio-4" value="Без ремонта"
+                             class="radio-button-group__input">
+                      <label for="section-4_radio-4" class="radio-button-group__label">
+                        Без ремонта
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--radio-grid">
+                <div class="form__name ">Общее</div>
+                <div class="form__disc">
+                  <div class="radio-button-group radio-button-group--no-tab">
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              name="is-windows-to-courtyard"
+                              id="section-2_radio-12"
+                              class="radio-button-group__input">
+                      <label for="section-2_radio-12" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Окна во двор
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              name="is-windows-to-street"
+                              id="section-1_radio-51"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-51" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Окна на улицу
+                      </label>
+                    </div>
+
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              name="is-balcony"
+                              id="section-1_radio-61"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-61" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Балкон
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              name="is-loggia"
+                              id="section-1_radio-91"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-91" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Лоджия
+                      </label>
+                    </div>
+
+                    <span class="form__spacer"></span>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              name="is-separate-bathroom"
+                              id="section-1_radio-71"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-71" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Раздельный санузел
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              name="is-combine-bathroom"
+                              id="section-1_radio-81"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-81" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Совмещенный санузел
+                      </label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="checkbox"
+                              name="is-garbage-chute"
+                              id="section-1_radio-82"
+                              class="radio-button-group__input">
+                      <label for="section-1_radio-82" class="radio-button-group__label">
+                        <div class="radio-button-group__fake-box"></div>
+                        Мусоропровод
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">О здании</h3>
+          <div class="form__section-content">
+            <ul class="form__input-list">
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Материал стен</div>
+                <div class="form__disc">
+                  <div class="select">
+                    <input type="hidden" name="matirial" class="select__input">
+                    <div class="select__header">
+                      <div data-value="" id="select-1" class="select__current"></div>
+                    </div>
+                    <div class="select__body">
+                      <div class="select__item" data-value="Не выбрано">Не выбрано</div>
+                      <div class="select__item" data-value="Блочный">Блочный</div>
+                      <div class="select__item" data-value="Древесина">Древесина</div>
+                      <div class="select__item" data-value="Кирпич">Кирпич</div>
+                      <div class="select__item" data-value="Пенобетон">Пенобетон</div>
+                      <div class="select__item" data-value="Газобетон">Газобетон</div>
+                      <div class="select__item" data-value="Ракушечник">Ракушечник</div>
+                      <div class="select__item" data-value="Керамзитобетон">Керамзитобетон</div>
+                      <div class="select__item" data-value="Арболит">Арболит</div>
+                      <div class="select__item" data-value="Шлакоблок">Шлакоблок</div>
+                      <div class="select__item" data-value="Монолит">Монолит</div>
+                      <div class="select__item" data-value="Сталинский">Сталинский</div>
+                      <div class="select__item" data-value="Монолитно-кирпичный">Монолитно-кирпичный</div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <div id="toggle-1" class="link-button__target form__toggle">
+                <li class="form__input-item form__input-item--one-line">
+                  <div class="form__name">Пассажирских лифтов</div>
+                  <div class="form__disc">
+                    <div class="radio-button-group">
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="passenger-elevators-count" id="section-4_radio-13" value="0"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-13" class="radio-button-group__label">
+                          0
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="passenger-elevators-count" id="section-4_radio-2324" value="1"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-2324" class="radio-button-group__label">
+                          1
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="passenger-elevators-count" id="section-4_radio-334" value="2"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-334" class="radio-button-group__label">
+                          2
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="passenger-elevators-count" id="section-4_radio-434" value="3"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-434" class="radio-button-group__label">
+                          3
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="passenger-elevators-count" id="section-4_radio-44" value="4"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-44" class="radio-button-group__label">
+                          4
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="form__input-item form__input-item--one-line">
+                  <div class="form__name">Грузовых лифтов</div>
+                  <div class="form__disc">
+                    <div class="radio-button-group">
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="service-elevators-count" id="section-4_radio-131" value="0"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-131" class="radio-button-group__label">
+                          0
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="service-elevators-count" id="section-4_radio-214" value="1"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-214" class="radio-button-group__label">
+                          1
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="service-elevators-count" id="section-421_radio-334" value="2"
+                               class="radio-button-group__input">
+                        <label for="section-421_radio-334" class="radio-button-group__label">
+                          2
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="service-elevators-count" id="section-4_radio-456" value="3"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-456" class="radio-button-group__label">
+                          3
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="service-elevators-count" id="section-4_radio-4334" value="4"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-4334" class="radio-button-group__label">
+                          4
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="form__input-item form__input-item--one-line">
+                  <div class="form__name">Название</div>
+                  <div class="form__disc">
+                    <input type="text" placeholder="Пример: ЖК “ Адмирал”" class="input" name="name">
+                  </div>
+                </li>
+                <li class="form__input-item form__input-item--one-line">
+                  <div class="form__name">Год постройки</div>
+                  <div class="form__disc">
+                    <input type="text" class="input" name="building-year">
+                  </div>
+                </li>
+                <li class="form__input-item form__input-item--one-line">
+                  <div class="form__name">Высота потолков</div>
+                  <div class="form__disc">
+                    <input type="text" class="input" name="ceiling-height"> <span>м</span>
+                  </div>
+                </li>
+                <li class="form__input-item form__input-item--one-line">
+                  <div class="form__name">Парковка</div>
+                  <div class="form__disc">
+                    <div class="radio-button-group">
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="parking-type" id="section-4_radio-11" value="Наземная"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-11" class="radio-button-group__label">
+                          Наземная
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="parking-type" id="section-4_radio-21454" value="Многоуровневая"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-21454" class="radio-button-group__label">
+                          Многоуровневая
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="parking-type" id="section-421_radio-3314" value="Подземная"
+                               class="radio-button-group__input">
+                        <label for="section-421_radio-3314" class="radio-button-group__label">
+                          Подземная
+                        </label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input type="radio" name="parking-type" id="section-4_radio-41256" value="На крыше"
+                               class="radio-button-group__input">
+                        <label for="section-4_radio-41256" class="radio-button-group__label">
+                          На крыше
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </div>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name"></div>
+                <div class="form__disc">
+                  <button data-toggle-id="1" type="button" class="link-button">Блоьше параметров</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">Фотографии</h3>
+          <h4 class="form__section-sub-title">Не допускаются к размещению фотографии с водяными знаками, чужих объектов
+            и
+            рекламные баннеры. JPG, PNG или GIF. Максимальный размер файла 10 мб</h4>
+          <div class="form__section-content">
+            <div class="photo-input">
+              <input type="file" name="photos" id="upload-file__input-1" class="photo-input__input" multiple
+                     accept="image/jpeg,image/png,image/gif">
+              <label for="upload-file__input-1" class="photo-input__label"></label>
+            </div>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">Описание</h3>
+          <div class="form__section-content">
+            <textarea
+                    name="description"
+                    rows="10"
+                    class="textarea"
+                    placeholder="Расскажите в каком состоянии полы, окна, сантехника, есть ли счетчики, была ли перепланировка, сколько было хозяев и какие соседи."
+            ></textarea>
+          </div>
+        </div>
+        <div class="form__section">
+          <h3 class="form__section-title">Цена и условия сделки</h3>
+          <div class="form__section-content">
+            <ul class="form__input-list">
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Цена</div>
+                <div class="form disc">
+                  <div class="row"><input type="text" name="price" class="input">
+                    <div class="radio-button-group radio-button-group--no-tab">
+                      <div class="radio-button-group__item">
+                        <input
+                                type="checkbox"
+                                value="is-mortgage"
+                                name="building-type"
+                                id="section-5_radio-3"
+                                class="radio-button-group__input">
+                        <label for="section-5_radio-3" class="radio-button-group__label">
+                          <div class="radio-button-group__fake-box"></div>
+                          Возможна ипотека
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Тип продажи</div>
+                <div class="form disc">
+                  <div class="row">
+                    <div class="radio-button-group">
+                      <div class="radio-button-group__item">
+                        <input
+                                type="radio"
+                                value="Свободная проджа"
+                                name="sale-type"
+                                id="section-5_radio-34"
+                                class="radio-button-group__input">
+                        <label for="section-5_radio-34" class="radio-button-group__label">Свободная проджа</label>
+                      </div>
+                      <div class="radio-button-group__item">
+                        <input
+                                type="radio"
+                                value="Альтернатива"
+                                name="sale-type"
+                                id="section-5_radio-345"
+                                class="radio-button-group__input">
+                        <label for="section-5_radio-345" class="radio-button-group__label">Альтернатива</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="form__input-item form__input-item--one-line">
+                <div class="form__name">Тариф</div>
+                <div class="form disc">
+                  <div class="radio-button-group">
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Продвинутый"
+                              name="tariff"
+                              id="section-5_radio-334"
+                              class="radio-button-group__input">
+                      <label for="section-5_radio-334" class="radio-button-group__label">Продвинутый</label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Свободный"
+                              name="tariff"
+                              id="section-5_radio-32345"
+                              class="radio-button-group__input">
+                      <label for="section-5_radio-32345" class="radio-button-group__label">Свободный</label>
+                    </div>
+                    <div class="radio-button-group__item">
+                      <input
+                              type="radio"
+                              value="Эксклюзивный"
+                              name="tariff"
+                              id="section-5_radio-33445"
+                              class="radio-button-group__input">
+                      <label for="section-5_radio-33445" class="radio-button-group__label">Эксклюзивный</label>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="submit-button">Очистить объявление</button>
+      </form>
+      <div class="announcement__validation">
+        <ul class="todo-list">
+          <li data-section-id="1" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Тип объявления</div>
+          </li>
+          <li data-section-id="2" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Адрес</div>
+          </li>
+          <li data-section-id="3" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Об объекте</div>
+          </li>
+          <li data-section-id="4" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">О здании</div>
+          </li>
+          <li data-section-id="5" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Фотографии</div>
+          </li>
+          <li data-section-id="6" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Описание</div>
+          </li>
+          <li data-section-id="7" class="todo-list__item">
+            <div class="todo-list__box"></div>
+            <div class="todo-list__text">Цена и условие сделки</div>
+          </li>
+        </ul>
+        <button class="submit-button submit-button--samll">Очистить объявление</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ef8a2e73-0459-425b-abd9-5821f6a6211b&lang=ru_RU"
+        type="text/javascript">
+</script>
+<script type="text/javascript">
+  // Функция ymaps.ready() будет вызвана, когда
+  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+  ymaps.ready(init);
+
+  function init() {
+    // Создание карты.
+    var myMap = new ymaps.Map("map", {
+      // Координаты центра карты.
+      // Порядок по умолчанию: «широта, долгота».
+      // Чтобы не определять координаты центра карты вручную,
+      // воспользуйтесь инструментом Определение координат.
+      center: [55.76, 37.64],
+      // Уровень масштабирования. Допустимые значения:
+      // от 0 (весь мир) до 19.
+      zoom: 7
+    });
+  }
+</script>
+
+<script src="./create_announcement/link-button.js"></script>
+<script src="./create_announcement/select.js"></script>
+<script src="./create_announcement/validation.js"></script>
+</body>
+</html>

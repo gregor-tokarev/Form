@@ -1,0 +1,35 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+
+  &--no-wrap {
+    flex-wrap: nowrap;
+  }
+
+  &__wrapper {
+    flex-grow: 1;
+
+    &--1 {
+      flex-grow: 1;
+    }
+
+    &--2 {
+      flex-grow: 2;
+    }
+
+    & + & {
+      margin-left: 2.5%;
+    }
+  }
+
+  &__spacer {
+    flex-basis: 100vw;
+
+    &--horizantal {
+      width: 0;
+      flex-basis: 100%;
+    }
+  }
+}

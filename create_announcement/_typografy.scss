@@ -1,0 +1,12 @@
+$def_font: "Open Sans", Arial, sans-serif;
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../openSans/OpenSans-Regular.ttf") format("ttf");
+}
+
+* {
+  font-family: $def_font;
+}
